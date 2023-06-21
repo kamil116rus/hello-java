@@ -13,6 +13,12 @@ public class Main {
         }
         System.out.println("   ***");
         System.out.println("   ***");
+
+        String userName ="Kamil";
+        String languageName = "java";
+
+        System.out.println(userName + " начал изучать язык " + languageName);
+        System.out.println(languageName + " интересный язык");
     }
     public static void print_line(int space, int star) {
         for(int i = 1; i < space; i++) {
@@ -21,6 +27,6 @@ public class Main {
         for (int i = 0; i< star; i++) {
             System.out.print("+");
         }
-        System.out.println("");
+        System.out.println();
     }
 }
