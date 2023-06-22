@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        person person1 = new person();
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите имя: ");
         String userName = scanner.next();
@@ -13,15 +13,20 @@ public class Main {
         int userAge = scanner.nextInt();
         System.out.println(userAge);
 
-
-        person1.setNameAge(userName, userAge);
-        person1.getName();
+        person person1 = new person(userName, userAge);
+//        person1.setNameAge(userName, userAge);
+    person1.getName();
 
     }
 
     static class person {
         private String name;
         private int age;
+
+        public person(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
         public void setNameAge(String userName, int userAge) {
             if (!userName.isEmpty()) {
                 name = userName;
