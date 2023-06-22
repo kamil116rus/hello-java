@@ -14,9 +14,6 @@ public class Task {
         int minute = hourse * 60;
         int second = minute * 60;
         long msec = (long)second * 1000;
-
-
-
-        System.out.println(("В " + year + " году " + mounth + " месяцев, " + day + " дней, " + hourse + " часов, " + minute + " минут, " +second + " секунд, " + msec + " милисекунд"));
+         System.out.println(("В " + year + " году " + mounth + " месяцев, " + day + " дней, " + hourse + " часов, " + minute + " минут, " +second + " секунд, " + msec + " милисекунд"));
     }
 }
